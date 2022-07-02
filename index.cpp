@@ -278,6 +278,11 @@ void addPost(string text)
     ofstream totalPostsWriter("./Posts/TOTALPOSTS.txt");
     totalPostsWriter << totalPosts;
 }
+//share post
+void sharePost(int index){
+string text = readLine("./Posts/"+to_string(index)+".txt",3);
+addPost(text);
+}
 
 // kuch settings programe chlnay say pehlay
 void init()
